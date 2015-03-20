@@ -10,18 +10,18 @@ module.exports = (robot) ->
           timeout: 2000
           headers: {'user-agent': 'php version fetcher'}
 
-        msg.send "come3"
+        msg.send "come2"
         request options, (error, response, body) ->
 
-        msg.send "come3"
+            msg.send "come3"
 
-        $ = cheerio.load body
+            $ = cheerio.load body
 
-        msg.send "come4"
-        $('.release-state').each ->
-            msg.send "come5"
-            releaseState = $ @
-            if releaseState.text() == 'Current Stable'
-                msg.send "come6"
-                msg.send releaseState.parent().attr('id')
-                msg.send "come7"
+            msg.send "come4"
+            $('.release-state').each ->
+                msg.send "come5"
+                releaseState = $ @
+                if releaseState.text() == 'Current Stable'
+                    msg.send "come6"
+                    msg.send releaseState.parent().attr('id')
+                    msg.send "come7"
