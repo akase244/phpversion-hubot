@@ -1,5 +1,5 @@
-cheerio = require 'cheerio'
 request = require 'request'
+cheerio = require 'cheerio'
 
 module.exports = (robot) ->
     robot.hear /phpver/i, (msg) ->
