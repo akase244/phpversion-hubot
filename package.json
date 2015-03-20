@@ -5,7 +5,7 @@
   "author": "aksae244@gmail.com",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
-    "request": "2.37.x",
+    "request": "*",
     "cheerio": "0.18.0",
     "hubot-maps": "0.0.1",
     "hubot-shipit": "^0.1.2",
