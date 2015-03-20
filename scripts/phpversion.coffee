@@ -16,4 +16,4 @@ module.exports = (robot) ->
         $('.release-state').each ->
             releaseState = $ @
             if releaseState.text() == 'Current Stable'
-                msg.send(releaseState.parent().attr('id'))
+                msg.send releaseState.parent().attr('id')
